@@ -18,11 +18,14 @@ public class Message implements Serializable{
     private int type;
     private Object object;
     
+    //message types
     public static final int MESSAGE = 1; 
     public static final int TURN = 2; 
     public static final int PLAY = 3; 
     public static final int RULES = 4;
     public static final int EXIT = 5;
+    public static final int CARDS = 6;
+    public static final int REMATCH = 7;
     
     public Message(String message, int type, Object object) {
         this.message = message;
